@@ -121,10 +121,6 @@ export default {
 
         cartCountPosition (state, getters) {
           return getters.cartProducts.reduce((count, product) => count + product.quantity, 0)
-        },
-
-        totalPosition(state) {
-            return state.totalPosition
         }
     }
 
