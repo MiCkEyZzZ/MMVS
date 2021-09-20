@@ -8,7 +8,6 @@ export default {
 
     mutations: {
         ADD_TO_PRODUCT (state, { id, name, price }) {
-            state.totalPosition++
             state.items.push({ id, quantity: 1, name, price })
         },
         REMOVE_PRODUCT (state, {id}) {
@@ -16,7 +15,6 @@ export default {
         },
         SUBMIT_FORM (state) {
             state.items = []
-            state.totalPosition = 0
         },
         INCREMENT_PRODUCT(state, {id}) {
             let cartItem = state.items.find(item => item.id === id)
