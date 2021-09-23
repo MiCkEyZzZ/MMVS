@@ -1,7 +1,11 @@
 <template>
   <div class="filter">
     <div class="form-control">
-      <input type="text" placeholder="Введите название..." v-model.trim="name">
+      <input
+          type="text"
+          placeholder="Введите название..."
+          v-model.trim="name"
+      >
     </div>
     <div class="form-control">
       <select v-model="status">
@@ -10,7 +14,11 @@
         <option value="unavailable">Нет в наличии</option>
       </select>
     </div>
-    <button class="btn warning" v-if="isActive" @click="reset">Очистить</button>
+    <button
+        class="btn warning"
+        v-if="isActive"
+        @click="reset"
+    >Очистить</button>
   </div>
 </template>
 

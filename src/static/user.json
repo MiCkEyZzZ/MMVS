@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Администратор",
+    "email": "zedmfix@gmail.com"
+  },
+  {
+    "id": 2,
+    "name": "Василий Пупкин",
+    "email": "pupkin@gmail.com"
+  },
+  {
+    "id": 3,
+    "name": "Сергей Пушкин",
+    "email": "pushkin@gmail.com"
+  },
+  {
+    "id": 4,
+    "name": "Борис Немцов",
+    "email": "nemcov@gmail.com"
+  },
+  {
+    "id": 5,
+    "name": "Алексей Навальный",
+    "email": "alnaval@gmail.com"
+  }
+]

@@ -15,7 +15,7 @@
         >О нас</router-link>
       </li>
       <li>
-        <span v-if="count === 0" class="cart-icon--empty">{{ count }}</span>
+        <span class="cart-icon--empty" v-if="!count">{{ count }}</span>
         <span v-else class="cart-icon">{{ count }}</span>
         <router-link to="/cart"
         >Корзина</router-link>
@@ -25,8 +25,8 @@
 </template>
 
 <script>
-import {useStore} from 'vuex'
-import {computed} from 'vue'
+import { computed } from 'vue'
+import { useStore } from 'vuex'
 
 export default {
   setup() {
@@ -34,7 +34,7 @@ export default {
 
     const count = computed(() => store.getters['cart/cartCountPosition'])
 
-    return {count}
+    return { count }
   }
 }
 </script>

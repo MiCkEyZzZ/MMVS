@@ -1,7 +1,7 @@
 <template>
-  <h4 v-if="products.length === 0" class="text-center">Список товаров пуст</h4>
+  <h4 class="text-center" v-if="products.length === 0">Список товаров пуст</h4>
   <ul class="table" v-else>
-    <li v-for="product in products" :key="product.id" class="table-item">
+    <li class="table-item" v-for="product in products" :key="product.id">
       <div class="table-control">
         <div class="table-picture mr-1">
           <img class="table-picture--img"
@@ -11,7 +11,7 @@
         </div>
         <router-link
             class="table-item-link"
-            :to="{name: 'Product', params: {id: product.id}}"
+            :to="{ name: 'Product', params: {id: product.id} }"
         >{{ product.name }}</router-link>
       </div>
       <div class="table-control">
@@ -28,11 +28,13 @@
       </div>
     </li>
   </ul>
+  <app-pagination></app-pagination>
 </template>
 
 <script>
-import {currency} from '@/common/helpers'
-import {useStore} from 'vuex'
+import { useStore } from 'vuex'
+
+import { currency } from '@/common/helpers'
 
 export default {
   props: ['products'],

@@ -2,7 +2,7 @@
   <div class="pagination-container">
     <ul class="pagination">
       <li class="pagination-item">
-        <button class="btn-pgn" disabled>Prev</button>
+        <button class="btn-pgn" disabled>Пред.</button>
       </li>
       <li class="pagination-item">
         <button class="btn-pgn primary">1</button>
@@ -14,7 +14,7 @@
         <button class="btn-pgn">3</button>
       </li>
       <li class="pagination-item">
-        <button class="btn-pgn">Next</button>
+        <button class="btn-pgn">След.</button>
       </li>
     </ul>
   </div>
@@ -48,7 +48,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 2.2rem;
+  width: 2.5rem;
   height: 2.2rem;
   align-items: center;
   margin: .3rem;
@@ -56,7 +56,7 @@ export default {
 }
 .btn-pgn {
   width: 100%;
-  min-width: 2.6rem;
+  min-width: 2.8rem;
   height: 2.2rem;
   font-size: 12px;
   font-weight: 700;

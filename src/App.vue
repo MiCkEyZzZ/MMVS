@@ -3,8 +3,8 @@
 </template>
 
 <script>
-import {computed} from 'vue'
-import {useRoute} from 'vue-router'
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
 
 import MainLayout from '@/layout/MainLayout'
 
@@ -16,6 +16,6 @@ export default {
       layout: computed(() => route.meta.layout)
     }
   },
-  components: {MainLayout}
+  components: { MainLayout }
 }
 </script>

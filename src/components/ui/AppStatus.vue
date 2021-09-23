@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import {ref, watch} from 'vue'
+import { ref, watch } from 'vue'
 
 export default {
   name: 'app-status',
